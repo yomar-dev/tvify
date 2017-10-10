@@ -42,3 +42,29 @@ body{
 	padding-top: 30px;
 	border-top: 1px solid #7f8c8d;
 }
+
+.tv-show{
+	width: 100%;
+	overflow: hidden;
+	padding: 16px;
+	background-color: #fff;
+	margin-bottom: 16px;
+	display: flex;
+}
+
+.tv-show:hover{
+	background-color: #ecf0f1;
+}
+
+.tv-show img{
+	max-height: 150px;
+	max-width: 350px;
+}
+
+.tv-show .info{
+	padding-left: 20px;
+}
+
+.left{
+	float: left;
+}

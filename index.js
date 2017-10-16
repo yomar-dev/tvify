@@ -23,8 +23,18 @@ $(function(){
 
 	$.ajax({
 		url: 'http://api.tvmaze.com/shows',
-		success: function(data, textStatus, xhr){
-			console.log(data);
+		success: function(shows, textStatus, xhr){
+			shows.forEach(function (show) {
+			  var article = template
+			  	.replace(':img:', show.image.medium)
+			  	.replace(':img alt:', show.name + ' Logo')
+			  	.replace(':name:', show.name)
+			  	.replace(':summary:', show.summary)
+
+			  $('#app-body')
+			  	.find('.tv-shows')
+			  	.append($(article))
+			})
 		}
 	})
 })

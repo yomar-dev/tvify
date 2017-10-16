@@ -1,3 +1,7 @@
+*{
+	color: #333;
+}
+
 body{
 	background: #bdc3c7;
 	font-family: Roboto;
@@ -57,8 +61,7 @@ body{
 }
 
 .tv-show img{
-	max-height: 150px;
-	max-width: 350px;
+	max-height: 350px;
 }
 
 .tv-show .info{

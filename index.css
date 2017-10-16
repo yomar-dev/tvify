@@ -68,3 +68,25 @@ body{
 .left{
 	float: left;
 }
+
+#app-body .search-form{
+	margin: 0 auto;
+	text-align: center;
+	margin: 1.2em 0em;
+}
+
+
+#app-body .search-form input[type="text"],
+#app-body .search-form button{
+	height: 2em;
+	border: 0;
+	font-size: 1.5em;
+}
+
+#app-body .search-form input[type="text"]{
+	width: 40%;
+}
+
+#app-body .search-form button{
+	width: 15%;
+}

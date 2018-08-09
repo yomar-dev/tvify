@@ -52,7 +52,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	var template = '<article class="tv-show">' + '<div class="left img-container">' + '<img src=":img:" alt=":img alt:">' + '</div>' + '<div class="right info">' + '<h1>:name:</h1>' + '<p>:summary:</p>' + '<button class="like"><i class="fa fa-star" aria-hidden="true"></i></button>' + '</div>' + '</article>';
 
 	if (!localStorage.shows) {
-		_jquery2.default.ajax('http://api.tvmaze.com/shows').then(function (shows, textStatus, xhr) {
+		_jquery2.default.ajax('https://api.tvmaze.com/shows').then(function (shows, textStatus, xhr) {
 			$tvShowsContainer.find('.loader').remove();
 			localStorage.shows = JSON.stringify(shows);
 			renderShows(shows);

@@ -3,34 +3,34 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Tvify</title>
+	<title>TVify</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="app.css">
 </head>
 <body>
+	
 	<div id="app-container">
 		<header id="app-header">
 			<h1>TVify</h1>
 		</header>
-
-		<section id="app-body">
-			<form class="search-form">
-				<input type="text">
-				<button type="submit">Buscar</button>
-			</form>
-
-			<div class="tv-shows">
-				
-			</div>
-		</section>
-
-		<footer id="app-footer">
-			<p>App desarrollada en el curso de Javascript y jQuery</p>
-		</footer>
 	</div>
 
-	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="index.js"></script>
+	<section id="app-body">
+		<form class="search-form">
+			<input type="text" name="" value="" placeholder="">
+			<button type="submit">Buscar</button>
+		</form>
+
+		<div class="tv-shows">
+			<div class="loader"></div>
+		</div>
+	</section>
+	
+	<footer id="app-footer">
+		<p>Aprendiendo jQuery</p>
+	</footer>
+	
+	<script src="app.js"></script>
 </body>
 </html>

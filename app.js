@@ -37,7 +37,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		var $loader = (0, _jquery2.default)('<div class="loader">');
 		$loader.appendTo($tvShowsContainer);
 		_jquery2.default.ajax({
-			url: 'http://api.tvmaze.com/search/shows',
+			url: 'https://api.tvmaze.com/search/shows',
 			data: { q: busqueda },
 			success: function success(res, textStatus, xhr) {
 				$loader.remove();
